@@ -11,7 +11,7 @@ public class BinaryTree<K extends Comparable<K>> {
 	private BinaryNode<K> addRecursively(BinaryNode<K> current, K key) {
 		if (current == null)
 		return new BinaryNode<>(key);
-		int compareResult = key.compareTo(key);
+		int compareResult = key.compareTo(current.key  );
 		if (compareResult == 0) return current;
 		if (compareResult <0) {
 			current.left = addRecursively(current.left, key);
