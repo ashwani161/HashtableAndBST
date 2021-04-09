@@ -26,7 +26,9 @@ public class LinkedHashMapTest {
 
 	}
 
-	@Test
+
+@Test
+
 	public void givenSentence_WhenWordAreRemoveToList_ShouldReturnavoidableFrequency() {
 		String sentence = "Paranoids are not paranoid because they are paranoid but "
 				+ "because they keep putting themselves deliberately into " + "paranoid avoidable situations";
@@ -45,5 +47,5 @@ public class LinkedHashMapTest {
 		int frequency = linkedHashMap1.getCount("avoidable");
 		Assert.assertEquals(0, frequency);
 
-	}
+}
 }
